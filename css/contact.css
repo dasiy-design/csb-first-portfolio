@@ -1,0 +1,74 @@
+/* ── CONTACT ── */
+#contact {
+  text-align: center;
+  padding: 8rem 3rem;
+  position: relative;
+  overflow: hidden;
+}
+.contact-bg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(
+    circle,
+    rgba(200, 255, 0, 0.05) 0%,
+    transparent 70%
+  );
+  pointer-events: none;
+}
+.contact-sub {
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 2rem;
+}
+.contact-headline {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: clamp(3rem, 8vw, 8rem);
+  line-height: 0.9;
+  margin-bottom: 3rem;
+}
+.contact-email {
+  font-size: 1.1rem;
+  color: var(--accent);
+  text-decoration: none;
+  border-bottom: 1px solid var(--accent);
+  padding-bottom: 0.2rem;
+  transition: opacity 0.2s;
+}
+.contact-email:hover {
+  opacity: 0.7;
+}
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 3rem;
+}
+.social-link {
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--white);
+  text-decoration: none;
+  opacity: 0.4;
+  transition: opacity 0.2s;
+}
+.social-link:hover {
+  opacity: 1;
+}
+
+/* Footer */
+footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.72rem;
+  opacity: 0.3;
+}

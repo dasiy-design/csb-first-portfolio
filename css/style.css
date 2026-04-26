@@ -1,0 +1,474 @@
+@import url(/css/uiux.css);
+@import url(/css/pub.css);
+@import url(/css/other.css);
+@import url(/css/back.css);
+@import url(/css/contact.css);
+
+:root {
+  --black: #0a0a0a;
+  --white: #f5f2ec;
+  --cream: #ede9df;
+  --accent: #c8ff00;
+  --accent2: #ff6b35;
+  --gray: #888;
+  --dark-gray: #1a1a1a;
+  --mid-gray: #2e2e2e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--black);
+  color: var(--white);
+  font-family: "Noto Sans KR", sans-serif;
+  font-weight: 300;
+  overflow-x: hidden;
+  cursor: none;
+  word-break: keep-all;
+}
+/* Custom cursor */
+.cursor {
+  width: 12px;
+  height: 12px;
+  background: var(--accent);
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 9999;
+  transition:
+    transform 0.15s ease,
+    width 0.2s,
+    height 0.2s;
+  mix-blend-mode: difference;
+}
+.cursor-ring {
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgba(200, 255, 0, 0.5);
+  border-radius: 50%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 9998;
+  transition:
+    transform 0.35s cubic-bezier(0.25, 0.46, 0.45, 0.94),
+    width 0.3s,
+    height 0.3s;
+}
+body:has(a:hover) .cursor,
+body:has(button:hover) .cursor {
+  width: 20px;
+  height: 20px;
+}
+
+/* Navigation */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 100;
+  padding: 1.5rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  mix-blend-mode: difference;
+}
+.nav-logo {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 1.4rem;
+  letter-spacing: 0.15em;
+  color: var(--white);
+}
+.nav-links {
+  display: flex;
+  gap: 2rem;
+}
+.nav-links a {
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--white);
+  text-decoration: none;
+  opacity: 0.7;
+  transition: opacity 0.2s;
+}
+.nav-links a:hover {
+  opacity: 1;
+}
+
+/* ── HERO ── */
+#hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 6rem 3rem 4rem;
+  position: relative;
+  overflow: hidden;
+}
+.hero-bg-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Bebas Neue", sans-serif;
+  font-size: clamp(8rem, 22vw, 22rem);
+  letter-spacing: -0.02em;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(255, 255, 255, 0.07);
+  white-space: nowrap;
+  user-select: none;
+  pointer-events: none;
+}
+.hero-tag {
+  font-size: 1rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.hero-tag::before {
+  content: "";
+  width: 2rem;
+  height: 1px;
+  background: var(--accent);
+  display: inline-block;
+}
+.hero-name {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: clamp(3.5rem, 9vw, 9rem);
+  line-height: 0.9;
+  letter-spacing: -0.01em;
+  margin-bottom: 2rem;
+}
+.hero-name .accent {
+  color: var(--accent);
+}
+.hero-desc {
+  max-width: 520px;
+  font-size: 1rem;
+  line-height: 1.8;
+  opacity: 0.6;
+  margin-bottom: 3rem;
+}
+.hero-cta {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.btn-primary {
+  background: var(--accent);
+  color: var(--black);
+  border: none;
+  padding: 0.9rem 2.2rem;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 0.85rem;
+  font-weight: 500;
+  letter-spacing: 0.08em;
+  cursor: none;
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+.btn-primary:hover {
+  transform: translate(-3px, -3px);
+  box-shadow: 4px 4px 0 var(--accent2);
+}
+.btn-outline {
+  background: transparent;
+  color: var(--white);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  padding: 0.9rem 2.2rem;
+  font-family: "Noto Sans KR", sans-serif;
+  font-size: 0.85rem;
+  letter-spacing: 0.08em;
+  cursor: none;
+  text-decoration: none;
+  display: inline-block;
+  transition:
+    border-color 0.2s,
+    color 0.2s;
+}
+.btn-outline:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.hero-scroll {
+  position: absolute;
+  right: 3rem;
+  bottom: 4rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  opacity: 0.4;
+  writing-mode: vertical-rl;
+}
+.scroll-line {
+  width: 1px;
+  height: 4rem;
+  background: linear-gradient(to bottom, transparent, var(--white));
+  animation: scrollAnim 2s ease-in-out infinite;
+}
+@keyframes scrollAnim {
+  0% {
+    transform: scaleY(0);
+    transform-origin: top;
+  }
+  50% {
+    transform: scaleY(1);
+    transform-origin: top;
+  }
+  51% {
+    transform: scaleY(1);
+    transform-origin: bottom;
+  }
+  100% {
+    transform: scaleY(0);
+    transform-origin: bottom;
+  }
+}
+
+/* ── SECTIONS COMMON ── */
+section {
+  padding: 7rem 3rem;
+}
+.section-label {
+  font-size: 0.65rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.section-label::before {
+  content: attr(data-num);
+  font-family: "DM Mono", monospace;
+  font-size: 0.7rem;
+  opacity: 0.4;
+}
+.section-title {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: clamp(2.5rem, 5vw, 5rem);
+  line-height: 1;
+  margin-bottom: 4rem;
+  letter-spacing: 0.01em;
+}
+
+/* ── ABOUT ── */
+#about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: start;
+}
+.about-left .intro-text {
+  font-size: 1.4rem;
+  line-height: 1.8;
+  font-weight: 300;
+  margin-bottom: 2.5rem;
+}
+.about-left .intro-text strong {
+  color: var(--accent);
+  font-weight: 500;
+}
+.about-bio {
+  font-size: 0.95rem;
+  line-height: 1.9;
+  opacity: 0.6;
+  margin-bottom: 2.5rem;
+}
+.contact-links {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.contact-link {
+  font-size: 0.75rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--white);
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  padding: 0.5rem 1rem;
+  transition:
+    border-color 0.2s,
+    color 0.2s;
+}
+.contact-link:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+.about-right {
+}
+.skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: rgba(255, 255, 255, 0.08);
+  margin-bottom: 3rem;
+}
+.skill-item {
+  background: var(--black);
+  padding: 1.5rem;
+}
+.skill-item h4 {
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.8rem;
+}
+.skill-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+}
+.tag {
+  font-size: 0.72rem;
+  padding: 0.25rem 0.6rem;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  opacity: 0.7;
+}
+.stats-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: rgba(255, 255, 255, 0.08);
+}
+.stat-box {
+  background: var(--black);
+  padding: 1.5rem;
+  text-align: center;
+}
+.stat-num {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2.5rem;
+  color: var(--accent);
+  display: block;
+}
+.stat-label {
+  font-size: 0.7rem;
+  opacity: 0.5;
+  letter-spacing: 0.1em;
+}
+
+/* ── PROCESS ── */
+/* #process {
+  background: var(--black);
+}
+.process-steps {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 1px;
+  background: rgba(255, 255, 255, 0.08);
+}
+.process-step {
+  background: var(--black);
+  padding: 2rem 1.5rem;
+  position: relative;
+}
+.process-step-num {
+  font-family: "DM Mono", monospace;
+  font-size: 0.65rem;
+  color: var(--accent);
+  opacity: 0.5;
+  margin-bottom: 1rem;
+}
+.process-step-icon {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+.process-step h3 {
+  font-size: 0.95rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+.process-step p {
+  font-size: 0.78rem;
+  opacity: 0.45;
+  line-height: 1.6;
+} */
+
+/* Footer */
+footer {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 2rem 3rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.72rem;
+  opacity: 0.3;
+}
+
+/* Scroll animations */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition:
+    opacity 0.8s ease,
+    transform 0.8s ease;
+}
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+.fade-in-delay-1 {
+  transition-delay: 0.1s;
+}
+.fade-in-delay-2 {
+  transition-delay: 0.2s;
+}
+.fade-in-delay-3 {
+  transition-delay: 0.3s;
+}
+
+@media (max-width: 900px) {
+  nav {
+    padding: 1.2rem 1.5rem;
+  }
+  section {
+    padding: 5rem 1.5rem;
+  }
+  #about {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+  .pub-grid {
+    grid-template-columns: 1fr;
+  }
+  .design-bento {
+    grid-template-columns: 1fr 1fr;
+  }
+  .bento-item.wide {
+    grid-column: span 2;
+  }
+  .process-steps {
+    grid-template-columns: 1fr 1fr;
+  }
+  #hero {
+    padding: 5rem 1.5rem 3rem;
+  }
+}

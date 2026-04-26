@@ -1,0 +1,808 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>csb portfolio</title>
+    <link rel="icon" href="/images/favicon.png"/>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Noto+Sans+KR:wght@300;400;500;700&family=DM+Mono:ital@0;1&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="cursor" id="cursor"></div>
+    <div class="cursor-ring" id="cursorRing"></div>
+
+    <!-- Navigation -->
+    <nav>
+      <div class="nav-logo">PORTFOLIO</div>
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#uiux">UI/UX</a>
+        <a href="#publishing">Publishing</a>
+        <a href="#other">Design</a>
+        <!-- <a href="#process">Process</a> -->
+        <a href="#contact">Contact</a>
+      </div>
+    </nav>
+
+    <!-- ── HERO ── -->
+    <section id="hero">
+      <div class="hero-bg-text">DESIGN</div>
+      <div class="hero-tag">이해를 구조로, <br />사용성을 디자인하다.</div>
+      <h1 class="hero-name">CHOI<br /><span class="accent">SUBIN</span></h1>
+      <p class="hero-desc">
+        디지털은 모두를 위한 도구가 되어야 하지만, <br />
+        누군가에게는 여전히 넘기 어려운 벽이 되기도 합니다. <br />
+        <br />
+        이해를 구조로, 사용성을 디자인하며 디지털 사각지대에 놓인 <br />
+        사람들의 권리를 지켜주는 UI/UX 디자이너가 되고 싶습니다.
+      </p>
+      <div class="hero-cta">
+        <button
+          class="btn-primary"
+          onclick="
+            document
+              .getElementById('uiux')
+              .scrollIntoView({ behavior: 'smooth' })
+          "
+        >
+          프로젝트 보기
+        </button>
+        <a href="#contact" class="btn-outline">연락하기</a>
+      </div>
+      <div class="hero-scroll">
+        <div class="scroll-line"></div>
+        Scroll
+      </div>
+    </section>
+
+    <!-- ── 01 ABOUT ── -->
+    <section id="about">
+      <div class="about-left">
+        <div class="section-label" data-num="01">About</div>
+        <p class="intro-text fade-in">
+          <Strong>사람을 이해하는 것</Strong>에서<br />
+          좋은 디자인이 시작된다고 믿습니다.
+        </p>
+        <p class="about-bio fade-in fade-in-delay-1">
+          산업디자인학과를 다니며, 사용자 경험에 매력을 느껴 UI/UX 디자인을
+          시작했습니다. <br />리서치부터 프로토타이핑, 퍼블리싱까지 제품의 전
+          과정을 이해하는 디자이너가 되고자 합니다.
+        </p>
+        <div class="contact-links fade-in fade-in-delay-2">
+          <a href="mailto:c.subin6805" target="_blank" class="contact-link">Email</a>
+          <a href="https://github.com/dasiy-design" class="contact-link"
+            >GitHub</a
+          >
+          <a
+            href="https://1drv.ms/f/c/55cd7eb2324d4d05/IgCw9crX-QS8SJ8XpPW7cQAYAfp0jMtKDNIO1PKMkFpWN0E?e=t4Tm6Q" target="_blank"
+            class="contact-link"
+            >Works</a
+          >
+        </div>
+      </div>
+      <div class="about-right">
+        <div class="skills-grid fade-in">
+          <div class="skill-item">
+            <h4>Design Tools</h4>
+            <div class="skill-tags">
+              <span class="tag">Figma</span>
+              <span class="tag">Illustrator</span>
+              <span class="tag">Photoshop</span>
+              <p>+</p>
+            </div>
+          </div>
+          <div class="skill-item">
+            <h4>Other Tools</h4>
+            <div class="skill-tags">
+              <span class="tag">Rhino</span>
+              <span class="tag">keyshot</span>
+              <p>+</p>
+            </div>
+          </div>
+          <div class="skill-item">
+            <h4>Publishing</h4>
+            <div class="skill-tags">
+              <span class="tag">VScode</span>
+              <span class="tag">HTML/CSS</span>
+              <span class="tag">Github</span>
+              <p>+</p>
+            </div>
+          </div>
+          <div class="skill-item">
+            <h4>AI Tools</h4>
+            <div class="skill-tags">
+              <span class="tag">Chat GPT</span>
+              <span class="tag">Claude</span>
+              <span class="tag">Gemini</span> +
+            </div>
+          </div>
+        </div>
+        <div class="stats-row fade-in fade-in-delay-1">
+          <div class="stat-box">
+            <span class="stat-num">5+</span>
+            <span class="stat-label">Projects</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-num">3+</span>
+            <span class="stat-label">Awards</span>
+          </div>
+          <div class="stat-box">
+            <span class="stat-num">8+</span>
+            <span class="stat-label">Licence</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── 02 UI/UX ── -->
+    <section id="uiux">
+      <div class="section-label" data-num="02">UI/UX Projects</div>
+      <h2 class="section-title fade-in">CASE<br />STUDIES</h2>
+      <div class="project-list">
+        <a href="https://www.figma.com/design/OEs57sLM4DgXq7J4zAIJXr/%EC%B5%9C%EC%88%98%EB%B9%88_%EB%AA%A8%EB%B0%94%EC%9D%BC%EC%9B%B9?node-id=0-1&p=f&t=5ghJwrbWSp2SVdhR-0" target="_blank" class="project-item fade-in">
+          <div class="project-num">001</div>
+          <div class="project-info">
+            <h3>KT Membership</h3>
+            <p>사용자 리서치 기반 UX 개선 · 편리함 80% 증가</p>
+            <div class="project-tags-inline">
+              <span class="project-tag">UX</span>
+              <span class="project-tag">Persona</span>
+              <span class="project-tag">App Design</span>
+              <span class="project-tag">Adaptive app</span>
+            </div>
+            <!-- date -->
+          <div class="project-meta">
+            <div class="meta-chip period">
+              <div class="meta-dot"></div>
+              2025. 02. 21 - 2025. 03. 06 · 3개월
+            </div>
+            <!-- persent-->
+            <div class="meta-chip contribution">
+              <div class="meta-dot"></div>
+              <div class="contribution-bar-wrap">
+                기여도
+                <div class="contribution-bar">
+                  <div class="contribution-fill" style="width: 100%"></div>
+                </div>
+                100% (개인)
+              </div>
+            </div>
+          </div>
+          </div>
+          <div class="project-arrow">↗</div>
+        </a>
+      </div>
+        <a href="https://www.figma.com/design/6mV50AsII5kp2kUhLlp5p0/UIUX-%EB%94%94%EC%9E%90%EC%9D%B8?node-id=16-7&t=jrmoD6EdGjWaBu6g-1" target="_blank" class="project-item fade-in fade-in-delay-1">
+          <div class="project-num">002</div>
+          <div class="project-info">
+            <h3>LOTTE Food Mall</h3>
+            <p>랜딩페이지 제작 · 프로토타입 설계 · 디자인시스템 구축(Figma)</p>
+            <div class="project-tags-inline">
+              <span class="project-tag">UI</span>
+              <span class="project-tag">Randing Page</span>
+              <span class="project-tag">Renewal</span>
+            </div>
+            <div class="project-meta">
+              <div class="meta-chip period">
+                <div class="meta-dot"></div>
+                2025. 02 .10 - 2025. 02 .14 · 7일
+              </div>
+              <div class="meta-chip contribution">
+                <div class="meta-dot"></div>
+                <div class="contribution-bar-wrap">
+                  기여도
+                  <div class="contribution-bar">
+                    <div class="contribution-fill" style="width: 100%"></div>
+                  </div>
+                  100% (개인)
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-arrow">↗</div>
+        </a>
+
+        <a href="https://onedrive.live.com/?viewid=4379f7a6%2D510e%2D47d9%2D8133%2D8d1c75c9565e&id=%2Fpersonal%2F55cd7eb2324d4d05%2FDocuments%2Fsubin%5Fportfolio%2Fcurilog%2Fcurilog%5Fpannel%2Epdf&parent=%2Fpersonal%2F55cd7eb2324d4d05%2FDocuments%2Fsubin%5Fportfolio%2Fcurilog" target="_blank" class="project-item fade-in fade-in-delay-2">
+          <div class="project-num">003</div>
+          <div class="project-info">
+            <h3>curilog 호기심을 기록하다</h3>
+            <p>취향 · 취미 · 브랜딩</p>
+            <div class="project-tags-inline">
+              <span class="project-tag">졸업작품</span>
+              <span class="project-tag">App Design</span>
+              <span class="project-tag">Targeting</span>
+            </div>
+            <div class="project-meta">
+              <div class="meta-chip period">
+                <div class="meta-dot"></div>
+                2024. 09 - 2025. 10 · 1개월
+              </div>
+              <div class="meta-chip contribution">
+                <div class="meta-dot"></div>
+                <div class="contribution-bar-wrap">
+                  기여도
+                  <div class="contribution-bar">
+                    <div class="contribution-fill" style="width: 100%"></div>
+                  </div>
+                  100% (개인)
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-arrow">↗</div>
+        </a>
+
+        <a href="https://onedrive.live.com/?viewid=4379f7a6%2D510e%2D47d9%2D8133%2D8d1c75c9565e&id=%2Fpersonal%2F55cd7eb2324d4d05%2FDocuments%2Fsubin%5Fportfolio%2Fplayball%5FUIUX%2Fplayball%20output%2Epdf&parent=%2Fpersonal%2F55cd7eb2324d4d05%2FDocuments%2Fsubin%5Fportfolio%2Fplayball%5FUIUX" target="_blank" class="project-item fade-in fade-in-delay-3">
+          <div class="project-num">004</div>
+          <div class="project-info">
+            <h3>Playball</h3>
+            <p>구기종목 장비대여 플랫폼 서비스 · 커뮤니티</p>
+            <div class="project-tags-inline">
+              <span class="project-tag">App Design</span>
+              <span class="project-tag">UI</span>
+              <span class="project-tag">1인가구</span>
+              <span class="project-tag">Research</span>
+            </div>
+            <div class="project-meta">
+              <div class="meta-chip period">
+                <div class="meta-dot"></div>
+                2023. 08. 28 - 2023. 12. 10 · 3개월
+              </div>
+              <div class="meta-chip contribution">
+                <div class="meta-dot"></div>
+                <div class="contribution-bar-wrap">
+                  기여도
+                  <div class="contribution-bar">
+                    <div class="contribution-fill" style="width: 100%"></div>
+                  </div>
+                  100% (개인)
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-arrow">↗</div>
+        </a>
+
+        <a href="https://1drv.ms/b/c/55cd7eb2324d4d05/IQAKdcCEV9PKRIBlhB7IhKmyAUSlomFi73EoMdKn4lR8u3o?e=jTx64j" target="_blank" class="project-item fade-in fade-in-delay-4">
+          <div class="project-num">005</div>
+          <div class="project-info">
+            <h3>고등교육 LMS 어플 Coursmos</h3>
+            <p>인터뷰 기반 UIUX 개선 · 효율적인 시간 관리</p>
+            <div class="project-tags-inline">
+              <span class="project-tag">UI</span>
+              <span class="project-tag">Team Project</span>
+              <span class="project-tag">Persona</span>
+              <span class="project-tag">Adaptive app</span>
+            </div>
+            <div class="project-meta">
+              <div class="meta-chip period">
+                <div class="meta-dot"></div>
+                2023. 03. 02 - 2023. 06. 20 · 3개월
+              </div>
+              <div class="meta-chip contribution">
+                <div class="meta-dot"></div>
+                <div class="contribution-bar-wrap">
+                  기여도
+                  <div class="contribution-bar">
+                    <div class="contribution-fill" style="width: 20%"></div>
+                  </div>
+                  20% (팀 5인)
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="project-arrow">↗</div>
+        </a>
+      </div>
+    </section>
+
+
+    <!-- 03 PUBLISHING -->
+    <section id="publishing">
+      <div class="section-label" data-num="03">Publishing</div>
+      <h2 class="section-title fade-in">WEB<br>BUILD</h2>
+      <div class="pub-grid">
+        <a href="https://reroll-boardlife.netlify.app/" target="_blank" class="pub-card fade-in">
+          <div class="pub-card-img">
+            <img src="/images/boardlife.png" alt="boardlife">
+          </div>
+          <h3>BOARDLIFE</h3>
+          <p>
+            팀장을 맡았던 팀 프로젝트. <br />PC만 제작된 보드게임 커뮤니티
+            사이트를 앱 서비스로 제작한 적응형 웹사이트. <br />Figma로 스타일
+            가이드 구축부터 시안 디자인까지 제작 후 Vscode로 퍼블리싱까지 구현.
+          </p>
+          <div class="pub-tech">
+            <span>Styled Components</span
+            >·<span>HTML/CSS</span>·<span>JS</span>·<span>Adaptive app</span>
+          </div>
+          <div class="pub-meta">
+            <div class="pub-meta-item">
+              <span class="pub-meta-label">제작기간</span>
+              <span class="pub-meta-val"
+                >2025. 06. 11 - 2025. 06. 25 · 3주</span
+              >
+            </div>
+            <div class="pub-meta-item">
+              <span class="pub-meta-label">기여도</span>
+              <div class="mini-bar-wrap">
+                <div class="mini-bar">
+                  <div class="mini-fill" style="width: 33.3%"></div>
+                </div>
+                <span class="pub-meta-val">33.3% (팀 3인)</span>
+              </div>
+            </div>
+            <div class="pub-meta-item">
+              <span class="pub-meta-label">역할</span>
+              <span class="pub-meta-val">팀장, 기획 + 디자인 + 퍼블리싱</span>
+            </div>
+          </div>
+        </a>
+        <a href="https://beepick.netlify.app/" target="_blank" class="pub-card fade-in fade-in-delay-1">
+          <div class="pub-card-img">
+            <img src="/images/mmca.jpg" alt="mmca">
+          </div>
+          <h3>국립현대미술관 MMCA</h3>
+          <p>
+            팀 프로젝트로 팀원들과 협업하여 만든 반응형 웹사이트. <br />
+            사용자의 접근성과 몰입감을 높이는 현대적인 예술공간으로서 온라인 플랫폼을 구축하고자 정보 구조 재정비.
+          </p>
+          <div class="pub-tech">
+            <span>UI</span>·<span>Styled Components</span
+            >·<span>HTML/CSS</span>·<span>JS</span>·<span>swiper.js</span>·<span
+              >Resonsive web</span
+            >
+          </div>
+          <div class="pub-meta">
+          <div class="pub-meta-item">
+            <span class="pub-meta-label">제작기간</span>
+            <span class="pub-meta-val"
+              >2025. 05. 28 - 2025. 06. 02 · 4주</span
+            >
+          </div>
+          <div class="pub-meta-item">
+            <span class="pub-meta-label">기여도</span>
+            <div class="mini-bar-wrap">
+              <div class="mini-bar">
+                <div class="mini-fill" style="width: 25%"></div>
+              </div>
+              <span class="pub-meta-val">25% (팀 4인)</span>
+            </div>
+          </div>
+          <div class="pub-meta-item">
+            <span class="pub-meta-label">역할</span>
+            <span class="pub-meta-val">기획 + 디자인 + 퍼블리싱</span>
+          </div>
+          </div>
+        </a>
+        <a href="https://dasiy-design.github.io/aespa_page/" target="_blank" class="pub-card fade-in fade-in-delay-2">
+          <div class="pub-card-img">
+            <img src="/images/aespa.png" alt="aespa">
+          </div>
+          <h3>aespa official homepage</h3>
+          <p>
+            kpop 걸그룹 에스파 공식 홈페이지 제작. <br />
+            그룹 컨셉이 잘 드러나면서 이들에게 관심이 생긴 사람들도 컨셉과 세계관에 대해 소개하고, 굿즈 구매까지 유도.
+          </p>
+          <div class="pub-tech">
+            <span>Fullpage</span>·<span>HTML/CSS</span>·<span>JS</span>
+          </div>
+          <div class="pub-meta">
+            <div class="pub-meta-item">
+              <span class="pub-meta-label">제작기간</span>
+              <span class="pub-meta-val"
+                >2025. 04. 07 - 2025. 04. 28 · 4주</span
+              >
+            </div>
+            <div class="pub-meta-item">
+              <span class="pub-meta-label">기여도</span>
+              <div class="mini-bar-wrap">
+                <div class="mini-bar">
+                  <div class="mini-fill" style="width: 100%"></div>
+                </div>
+                <span class="pub-meta-val">100% (개인)</span>
+              </div>
+            </div>
+            <div class="pub-meta-item">
+              <span class="pub-meta-label">역할</span>
+              <span class="pub-meta-val">디자인 + 퍼블리싱</span>
+            </div>
+          </div>
+        </a>
+        <a href="https://dasiy-design.github.io/mediheal/" target="_blank" class="pub-card fade-in fade-in-delay-3">
+          <div class="pub-card-img">
+            <img src="/images/mediheal.png" alt="mediheal onepage design">
+          </div>
+          <h3>MEDIHEAL onepage</h3>
+          <p>
+            기초 화장품 브랜드 홈페이지를 원페이지로 제작. <br /> 맑고 깨끗한 피부를 위해 연구한다는 표현을 극대화한 디자인.
+          </p>
+          <div class="pub-tech">
+            <span>Main</span>·<span>Onepage</span>·<span>HTML/CSS</span>
+          </div>
+          <div class="pub-meta">
+            <div class="pub-meta-item">
+              <span class="pub-meta-label">제작기간</span>
+              <span class="pub-meta-val"
+                >2025. 03. 14 - 2025. 03. 25 · 2주</span
+              >
+            </div>
+            <div class="pub-meta-item">
+              <span class="pub-meta-label">기여도</span>
+              <div class="mini-bar-wrap">
+                <div class="mini-bar">
+                  <div class="mini-fill" style="width: 100%"></div>
+                </div>
+                <span class="pub-meta-val">100% (개인)</span>
+              </div>
+            </div>
+            <div class="pub-meta-item">
+              <span class="pub-meta-label">역할</span>
+              <span class="pub-meta-val">기획 + 디자인 + 퍼블리싱</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="https://www.figma.com/design/RXomNTIbi8bQ8wms5CQFi9/%EC%B5%9C%EC%88%98%EB%B9%88_%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4?node-id=2072-2&t=OjTNAv1nLLdG4jqW-1" target="_blank" class="pub-card fade-in fade-in-delay-4">
+          <div class="pub-card-img">
+            <img src="/images/step.jpg" alt="publishing all step">
+          </div>
+          <h3>Publishing All Step</h3>
+          <p>
+            기획부터 디자인, 산출물 목록 등 모든 과정을 볼 수 있습니다.
+          </p>
+          <div class="pub-tech">
+            <span>Publishing</span>·<span>Components</span>·<span>Style Guide</span>
+          </div>
+          <div class="pub-meta">
+            <div class="pub-meta-item">
+              <span class="pub-meta-label">제작기간</span>
+              <span class="pub-meta-val"
+                >2025. 03. 14 - 2025. 06. 25 · 3개월</span
+              >
+            </div>
+            <div class="pub-meta-item">
+              <span class="pub-meta-label">기여도</span>
+              <div class="mini-bar-wrap">
+                <div class="mini-bar">
+                  <div class="mini-fill" style="width: 100%"></div>
+                </div>
+                <span class="pub-meta-val">100% Complet</span>
+              </div>
+            </div>
+            <div class="pub-meta-item">
+              <span class="pub-meta-label">역할</span>
+              <span class="pub-meta-val">기획 + 디자인 + 퍼블리싱</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+
+    <!-- ── 04 OTHER DESIGN ── -->
+    <section id="other">
+      <div class="section-label" data-num="04">Other Design</div>
+      <h2 class="section-title fade-in">MORE<br>WORK</h2>
+      <div class="design-bento">
+        <a href="#" target="_blank" class="bento-item wide fade-in">
+          <div class="bento-preview">
+            <img src="/images/ai_poster1.png" alt="포스터 디자인">
+          </div>
+          <h3>포스터 디자인 (3)</h3>
+          <p>블렌딩 효과, 입체 글자 효과 · 포토샵</p>
+          <div class="bento-meta">
+            <div class="bento-meta-chip">기간<span>2025. 01. 17 · 총 10시간</span></div>
+            <div class="bento-meta-chip">기여도 <span>100% 개인</span></div>
+          </div>
+        </a>
+        <a href="#" target="_blank" class="bento-item fade-in fade-in-delay-1">
+          <div class="bento-preview">
+            <img src="/images/cardnews.png" alt="카드뉴스 디자인">
+          </div>
+          <h3>카드뉴스</h3>
+          <p>K-직장인이 월요일보다 수요일이 피곤한 이유 · 피그마</p>
+          <div class="bento-meta">
+            <div class="bento-meta-chip">기간 <span>2025. 02. 04 · 4시간</span></div>
+            <div class="bento-meta-chip">기여도 <span>100% 개인</span></div>
+          </div>
+        </a>
+        <a href="#" target="_blank" class="bento-item fade-in fade-in-delay-2">
+          <div class="bento-preview">
+            <img src="/images/footfit_mockup.jpg" alt="브랜딩">
+          </div>
+          <h3>브랜딩 (3)</h3>
+          <p>interpark, candory, footfit · 일러스트</p>
+          <div class="bento-meta">
+            <div class="bento-meta-chip">제작년도 <span>2021 · 2024</span></div>
+            <div class="bento-meta-chip">기여도 <span>100% 개인</span></div>
+          </div>
+        </a>
+        <a href="#" target="_blank" class="bento-item fade-in fade-in-delay-3">
+          <div class="bento-preview">
+            <img src="/images/homerunball_mockup.png" alt="웹디자인">
+          </div>
+          <h3>광고 포스터 (2)</h3>
+          <p>homerunball, mitte</p>
+          <div class="bento-meta">
+            <div class="bento-meta-chip">기간 <span>2025. 01. 11 · 총 8시간</span></div>
+            <div class="bento-meta-chip">기여도 <span>100% 개인</span></div>
+          </div>
+        </a>
+        <a href="#" target="_blank" class="bento-item fade-in fade-in-delay-4">
+          <div class="bento-preview">
+            <img src="/images/pncg_cover.png" alt="웹디자인">
+          </div>
+          <h3>웹 / 화면 디자인 (3)</h3>
+          <p>피나치공, BOSE, 팝업창</p>
+          <div class="bento-meta">
+            <div class="bento-meta-chip">기간 <span>2023.12 · 3주</span></div>
+            <div class="bento-meta-chip">기여도 <span>100% 개인</span></div>
+          </div>
+        </a>
+        <a href="#" target="_blank" class="bento-item fade-in fade-in-delay-5">
+          <div class="bento-preview">
+            <img src="/images/picocart.png" alt="제품디자인">
+          </div>
+          <h3>제품디자인 (2)</h3>
+          <p>카트디자인, 웨어러블디자인 · 라이노, 키샷</p>
+          <div class="bento-meta">
+            <div class="bento-meta-chip">기간 <span>2023. 08 · 1개월</span></div>
+            <div class="bento-meta-chip">기여도 <span>100% 개인</span></div>
+          </div>
+        </a>
+
+        <a href="https://www.figma.com/design/RXomNTIbi8bQ8wms5CQFi9/%EC%B5%9C%EC%88%98%EB%B9%88_%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4?node-id=2001-2&t=nAr9A5jdovobcLcG-1" target="_blank" class="bento-item fade-in fade-in-delay-6">
+          <div class="bento-preview">
+            <img src="/images/more.jpg" alt="more">
+          </div>
+          <h3>더보기</h3>
+          <p>모든 작업을 한번에 보실 수 있습니다 · 2021 ~ </p>
+          <div class="bento-meta">
+            <div class="bento-meta-chip">기간 <span>2021-</span></div>
+            <div class="bento-meta-chip">기여도 <span>100% 개인</span></div>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ── 05 BACKGROUND ── -->
+    <section id="background">
+      <div class="section-label" data-num="05">Background</div>
+      <h2 class="section-title fade-in">CREDS &amp;<br>ACTIVITY</h2>
+      <div class="bg-layout">
+    
+      <!-- 왼쪽: 수상 · 자격증 · 교육 -->
+        <div class="bg-left">
+          <div class="bg-col-title">Awards · Certs · Education</div>
+          <div class="credential-list">
+    
+            <div class="credential-item fade-in">
+              <div class="credential-badge cert">C</div>
+              <div class="credential-body">
+                <h4>HSK 2급</h4>
+                <p>HSK시험센터</p>
+              </div>
+              <div class="credential-year">2026.02</div>
+            </div>
+
+            <div class="credential-item fade-in fade-in-delay-1">
+              <div class="credential-badge edu">E</div>
+              <div class="credential-body">
+                <h4>UXUI디자인&웹기획 프론트엔드 부트캠프과정 수료</h4>
+                <p>종로 ezen academy · 960H</p>
+              </div>
+              <div class="credential-year">2024.12</div>
+            </div>
+
+            <div class="credential-item fade-in fade-in-delay-2">
+              <div class="credential-badge award">★</div>
+              <div class="credential-body">
+                <h4>경기지역 LINC 3.0 ICC연계 창업 경진대회</h4>
+                <p>전문대학 수도권 링크3.0협의회</p>
+              </div>
+              <div class="credential-year">2023.06</div>
+            </div>
+  
+            <div class="credential-item fade-in fade-in-delay-3">
+              <div class="credential-badge cert">C</div>
+              <div class="credential-body">
+                <h4>Adobe Certified Professional(ACP) Ai, Ps, Id</h4>
+                <p>Adobe</p>
+              </div>
+              <div class="credential-year">2022. 12</div>
+            </div>
+    
+            <div class="credential-item fade-in fade-in-delay-4">
+              <div class="credential-badge cert">C</div>
+              <div class="credential-body">
+                <h4>SMAT(서비스경영자격)3급</h4>
+                <p>한국생산성본부</p>
+              </div>
+              <div class="credential-year">2022. 09</div>
+            </div>
+
+            <div class="credential-item fade-in fade-in-delay-5">
+              <div class="credential-badge cert">C</div>
+              <div class="credential-body">
+                <h4>GTQ(그래픽기술자격) 1급</h4>
+                <p>한국생산성본부</p>
+              </div>
+              <div class="credential-year">2022. 07</div>
+            </div>
+
+            <div class="credential-item fade-in fade-in-delay-6">
+              <div class="credential-badge award">★</div>
+              <div class="credential-body">
+                <h4>2022 Blue Awards 상품문화디자인 국제공모전</h4>
+                <p>한국상품문화디자인학회</p>
+              </div>
+              <div class="credential-year">2022. 06</div>
+            </div>
+
+            <div class="credential-item fade-in fade-in-delay-7">
+              <div class="credential-badge cert">C</div>
+              <div class="credential-body">
+                <h4>컴퓨터활용능력 2급</h4>
+                <p>한국생산성본부</p>
+              </div>
+              <div class="credential-year">2022. 02</div>
+            </div>
+
+            <div class="credential-item fade-in fade-in-delay-8">
+              <div class="credential-badge cert">C</div>
+              <div class="credential-body">
+                <h4>2종 보통 운전면허</h4>
+                <p>경찰청</p>
+              </div>
+              <div class="credential-year">2020. 01</div>
+            </div>
+
+          </div>
+        </div>
+    
+      <!-- 오른쪽: 활동 타임라인 -->
+        <div class="bg-right">
+          <div class="bg-col-title">Activities &amp; Experience</div>
+          <div class="activity-list">
+    
+            <div class="activity-item fade-in">
+              <div class="activity-date">2026.02<br>–<br>현재</div>
+              <div class="activity-dot highlight"></div>
+              <div class="activity-content">
+                <div class="activity-type job">part time job</div>
+                <h4>하모니마트 - 보라점</h4>
+                <p>손님 응대, 매장 및 물류 관리 등</p>
+              </div>
+            </div>
+
+            <div class="activity-item fade-in fade-in-delay-1">
+              <div class="activity-date">2023.10<br>–<br>2023.11</div>
+              <div class="activity-dot"></div>
+              <div class="activity-content">
+                <div class="activity-type experience">experience</div>
+                <h4>2023 산학협력 엑스포 참가</h4>
+                <p>팀장<br />교육부가 주관한 U300+ 활동의 본선<br /> 성장트랙 최종 20팀에 선정되어 학교 대표로 출전</p>
+              </div>
+            </div>
+    
+            <div class="activity-item fade-in fade-in-delay-2">
+              <div class="activity-date">2023.08</div>
+              <div class="activity-dot"></div>
+              <div class="activity-content">
+                <div class="activity-type experience">experience</div>
+                <h4>2023 U300+ 네트워킹데이</h4>
+                <p>학생 창업 유망팀 300 경진대회 성장트랙 최종 선정</p>
+              </div>
+            </div>
+    
+            <div class="activity-item fade-in fade-in-delay-3">
+              <div class="activity-date">2023.07</div>
+              <div class="activity-dot"></div>
+              <div class="activity-content">
+                <div class="activity-type experience">experience</div>
+                <h4>모란시장 로스팅랩 굿즈 개발</h4>
+                <p>모란시장 상권회복 및 상인들을 위한 굿즈 개발 프로젝트 참여. <br />JTBC 다큐 방송 출연.</p>
+              </div>
+            </div>
+    
+            <div class="activity-item fade-in fade-in-delay-4">
+              <div class="activity-date">2023.06</div>
+              <div class="activity-dot"></div>
+              <div class="activity-content">
+                <div class="activity-type experience">experience</div>
+                <h4>LINC 3.0 ICC 연계 창업 캠프</h4>
+                <p>학생들을 대상으로 한 창업특강, ICC 연계 창업경진대회</p>
+              </div>
+            </div>
+    
+            <div class="activity-item fade-in fade-in-delay-5">
+              <div class="activity-date">2023.04<br>–<br>2024.09</div>
+              <div class="activity-dot"></div>
+              <div class="activity-content">
+                <div class="activity-type job">part time job</div>
+                <h4>CU 편의점 아르바이트 - 민속촌입구점</h4>
+                <p>손님 응대, 매장 관리, 물류 및 재고 관리</p>
+              </div>
+            </div>
+
+            <div class="activity-item fade-in fade-in-delay-6">
+              <div class="activity-date">2021.09<br>–<br>2022.06</div>
+              <div class="activity-dot"></div>
+              <div class="activity-content">
+                <div class="activity-type job">part time job</div>
+                <h4>쿠스쿠스 베이커리</h4>
+                <p>손님 응대, 매장 관리, 제품 포장 등</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+    
+      </div>
+    </section>
+
+    <!-- ── CONTACT ── -->
+    <section id="contact">
+      <div class="contact-bg"></div>
+      <div class="contact-sub">새로운 기회를 기다리고 있습니다</div>
+      <h2 class="contact-headline fade-in">LET'S<br />WORK</h2>
+      <br />
+      <!-- <a href="#" class="contact-email">send DM</a> -->
+      <div class="social-links">
+        <a href="https://www.instagram.com/diary.of_twitty/" class="social-link">Instagram</a>
+        <a href="https://www.figma.com/design/RXomNTIbi8bQ8wms5CQFi9/%EC%B5%9C%EC%88%98%EB%B9%88_%ED%8F%AC%ED%8A%B8%ED%8F%B4%EB%A6%AC%EC%98%A4?node-id=2001-2&t=OjTNAv1nLLdG4jqW-1" class="social-link">figma</a>
+        <a href="https://github.com/dasiy-design" class="social-link">GitHub</a>
+      </div>
+    </section>
+
+    <footer>
+      <span>Thank you for watching</span>
+      <span>© 2026 CHOI SU BIN. All rights reserved.</span>
+    </footer>
+  </body>
+
+  <!-- js -->
+  <script>
+    const cursor = document.getElementById("cursor");
+    const ring = document.getElementById("cursorRing");
+    let mx = 0,
+      my = 0,
+      rx = 0,
+      ry = 0;
+
+    document.addEventListener("mousemove", (e) => {
+      mx = e.clientX;
+      my = e.clientY;
+      cursor.style.transform = `translate(${mx - 6}px, ${my - 6}px)`;
+    });
+
+    function animateRing() {
+      rx += (mx - rx) * 0.12;
+      ry += (my - ry) * 0.12;
+      ring.style.transform = `translate(${rx - 18}px, ${ry - 18}px)`;
+      requestAnimationFrame(animateRing);
+    }
+    animateRing();
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((e) => {
+          if (e.isIntersecting) e.target.classList.add("visible");
+        });
+      },
+      { threshold: 0.1 },
+    );
+
+    document.querySelectorAll(".fade-in").forEach((el) => observer.observe(el));
+
+    document.querySelectorAll(".project-item").forEach((item) => {
+      item.addEventListener("click", () => {
+      });
+    });
+  </script>
+</html>

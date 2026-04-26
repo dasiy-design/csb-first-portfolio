@@ -1,0 +1,169 @@
+/* ── BACKGROUND ── */
+#background {
+  background: var(--black);
+}
+.bg-layout {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 5rem;
+  align-items: start;
+}
+.bg-col-title {
+  font-size: 0.65rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+.bg-col-title::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* 수상/자격/교육 카드 */
+.credential-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  background: rgba(255, 255, 255, 0.08);
+}
+.credential-item {
+  background: var(--black);
+  padding: 1.6rem 1.8rem;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 1.2rem;
+  align-items: start;
+}
+.credential-badge {
+  width: 36px;
+  height: 36px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.75rem;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+.credential-badge.award {
+  border-color: rgba(200, 255, 0, 0.4);
+  color: var(--accent);
+}
+.credential-badge.cert {
+  border-color: rgba(255, 107, 53, 0.4);
+  color: var(--accent2);
+}
+.credential-badge.edu {
+  border-color: rgba(255, 255, 255, 0.2);
+  color: rgba(255, 255, 255, 0.5);
+}
+.credential-body h4 {
+  font-size: 0.95rem;
+  font-weight: 400;
+  margin-bottom: 0.3rem;
+}
+.credential-body p {
+  font-size: 0.78rem;
+  opacity: 0.45;
+  line-height: 1.5;
+}
+.credential-year {
+  font-family: "DM Mono", monospace;
+  font-size: 0.68rem;
+  color: var(--accent);
+  opacity: 0.5;
+  white-space: nowrap;
+  margin-top: 3px;
+}
+
+/* 활동/경험 타임라인 */
+.activity-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+.activity-item {
+  display: grid;
+  grid-template-columns: 72px 1fr;
+  gap: 1.5rem;
+  padding-bottom: 2rem;
+  position: relative;
+}
+.activity-item:last-child {
+  padding-bottom: 0;
+}
+.activity-item::before {
+  content: "";
+  position: absolute;
+  left: 35px;
+  top: 28px;
+  bottom: 0;
+  width: 1px;
+  background: rgba(255, 255, 255, 0.08);
+}
+.activity-item:last-child::before {
+  display: none;
+}
+.activity-date {
+  font-family: "DM Mono", monospace;
+  font-size: 0.65rem;
+  opacity: 0.35;
+  text-align: right;
+  padding-top: 4px;
+  line-height: 1.5;
+}
+.activity-dot {
+  position: absolute;
+  left: 29px;
+  top: 6px;
+  width: 13px;
+  height: 13px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: var(--black);
+  border-radius: 50%;
+}
+.activity-dot.highlight {
+  border-color: var(--accent);
+  background: var(--accent);
+}
+.activity-content {
+  padding-top: 0;
+}
+.activity-type {
+  font-size: 0.6rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 0.4rem;
+}
+.activity-type.experience {
+  color: var(--accent2);
+}
+.activity-type.job {
+  color: var(--accent);
+}
+.activity-type.job {
+  color: rgb(200, 255, 0);
+}
+.activity-content h4 {
+  font-size: 0.95rem;
+  font-weight: 400;
+  margin-bottom: 0.3rem;
+}
+.activity-content p {
+  font-size: 0.78rem;
+  opacity: 0.45;
+  line-height: 1.6;
+}
+
+@media (max-width: 900px) {
+  .bg-layout {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
